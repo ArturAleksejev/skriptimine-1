@@ -1,0 +1,10 @@
+#! /bin/bash
+#
+# Muljed minu saavutustest
+#
+echo "Sulo Hipponen" # väljastab ees- ja perekonnanime
+echo "ISP16" # väljastab õppegrupi
+echo "Mulle meeldivad antud tunnid, aga õpetaja võiks tihedamini kohal olla :)" #Aine tunnetus 
+echo "Olen õppinud uusi asju ja arenenud. Kõik OK!" #Mulje ja edasijõudmine
+#
+#skripti lõpp
