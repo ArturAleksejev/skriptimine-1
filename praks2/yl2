@@ -4,7 +4,7 @@
 #
 echo "Sulo Hipponen" # väljastab ees- ja perekonnanime
 echo "ISP16" # väljastab õppegrupi
-echo "Mulle meeldivad antud tunnid, aga õpetaja võiks tihedamini kohal olla :)" #Aine tunnetus 
-echo "Olen õppinud uusi asju ja arenenud. Kõik OK!" #Mulje ja edasijõudmine
+echo "Mulle meeldivad antud tunnid." #Aine tunnetus 
+echo "Olen õppinud uusi asju ja arenenud." #Mulje ja edasijõudmine
 #
 #skripti lõpp
