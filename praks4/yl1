@@ -7,12 +7,13 @@ echo -n " sisesta arv: "
 read arv
 #kontrollime, kas arv on positiivne
 #sel juhul peab olema arv suurem kui 0
-if [ $arv -gt 0 ]
-then
+if [ $arv -gt 0 ]; then
    echo "$arv on positiivne"
 #kui väärtus on negatiivne
 #siis arv peab olema väiksem kui null
-else
+elif [ $arv -lt 0 ]; then
    echo "$arv on negatiivne"
+else
+   echo "$arv on neutraalne"
 #if lause tuleb korralikult lõpetada
 fi
