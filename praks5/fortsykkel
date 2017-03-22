@@ -1,0 +1,7 @@
+#!/bin/bash
+#Numbrite 0-10 välja printimine
+
+for ((i=1; i<10; i++))
+do
+	echo $i
+done
