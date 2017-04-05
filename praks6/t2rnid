@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Tsükkel tsükli sees
+for (( i = 1;  i<= 6; i++ ))		### Outer for loop ###
+do
+	for (( j = 1; j <= 6; j++ ))	### Inner for loop ###
+	do
+		echo -n " * "
+	done
+   echo "" #### print the new line ####
+done
+#Esimene loop määrab mitu rida alla prinditakse
+#Teine loop määrab mitu rida paremale prinditakse
