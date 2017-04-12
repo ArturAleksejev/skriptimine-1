@@ -3,6 +3,12 @@
 
 for ip in 172.23.13.{20..40}
 do 
-	ping -c 2 $ip
+	ping -c 1 $ip
+	if [ $? eq 0 ]; then
+		echo "$ip - OK"
+	else
+		echo "$ip - Not OK"
+	fi
 done
+
 
