@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+#Skritp küsib aega ja prindib vastavalt:
+#6-12 "Tere hommikust", 12-18 "Tere õhtust", 22-6 "Head ööd".
+#Muude väärtuste korral väljestatakse seletav veateade.
+#Muude väärtuste veateate väljastamiseks oleks pidanud tegema kõik ühte lausesse "elif" commandiga.
+echo -n Tere, palun sisestage kellaaeg: 
+read kellaaeg
+
+# Tere hommikust
+if [ $kellaaeg -gt 5 -a $kellaaeg -le 12 ]; then
+	echo Tere hommikust, kell on $kellaaeg!
+fi
+
+# Tere õhtust
+if [ $kellaaeg -gt 12 -a $kellaaeg -le 18 ]; then
+	echo Tere õhtust, kell on $kellaaeg!
+fi
+
+# Head ööd
+if [ $kellaaeg -gt 18 -a $kellaaeg -lt 24 ] || [ $kellaaeg -ge 0 -a $kellaaeg -lt 6 ]; then
+	echo Head ööd, kell on $kellaaeg!
+fi
