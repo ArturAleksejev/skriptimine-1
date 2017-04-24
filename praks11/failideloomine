@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo -n "Sisestage algnumber: "
+read algnumber
+echo -n "Sisestage topnumber: "
+read topnumber
+
+for((nr=$algnumber; nr<=$topnumber; nr++))
+do
+	failinimi="fail$nr"
+	if [ -f $failinimi ]; then
+		echo "$failinimi fail on juba olemas"
+	else
+		touch $failinimi
+		echo $failinimi on loodud
+	fi
+done
