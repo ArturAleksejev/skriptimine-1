@@ -10,6 +10,12 @@ do
 	failinimi="fail$nr"
 	if [ -f $failinimi ]; then
 		echo "$failinimi fail on juba olemas"
+		echo -n "Kas soovid asendada uue failiga? y/n"
+	read vastus
+		if [ "$vastus" = "y" -o "$vastus" = "Y" ]; then
+	rm $failinimi
+	touch $failinimi
+	fi
 	else
 		touch $failinimi
 		echo $failinimi on loodud
