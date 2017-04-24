@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo "Valige palun üks järgnevatest valikutest: "
+
+echo "1 - Lihtsalt loo fail vastava nimega."
+echo "2 - Loo vastava nimega fail ja tee see lahti vim tekstiredaktoriga"
+echo "3 - Välju antud programmist."
+
+read valik;
+
+case $valik in
+	1) echo "Sisestage soovitud nimi: "
+		read nimi
+			touch $nimi
+;;
+	2) echo "Sisestage soovitud nimi: "
+		read teine
+			touch $teine
+		vim $teine
+;;
+	3) echo "Tänan, et kasutasite meie programmi."
+		exit
+;;
+esac
