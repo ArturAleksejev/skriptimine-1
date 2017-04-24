@@ -18,7 +18,4 @@ case $valik in
 			touch $teine
 		vim $teine
 ;;
-	3) echo "Tänan, et kasutasite meie programmi."
-		exit
-;;
-esac
+	3) echo "Tänan, et kasutasite meie progra
