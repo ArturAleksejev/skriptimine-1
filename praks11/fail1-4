@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "Sisestage algnumber: "
+read algnumber
+echo -n "Sisestage topnumber: "
+read topnumber
+
+for((nr=$algnumber; nr<=$topnumber; nr++))
+do
+   touch fail$nr
+done
